@@ -3,7 +3,7 @@
 session_start();?>
 <html>
 <head>
-<title>BookPage</title>
+<title>NOVA</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
