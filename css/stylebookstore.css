@@ -133,7 +133,7 @@ height:600px;
 
 .main-container{
 	margin:1% 8%;
-	//padding:1%;
+	padding:1%;
 	display:flex;
 	flex-wrap:wrap;
 }
