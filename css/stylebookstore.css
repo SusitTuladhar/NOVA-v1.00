@@ -53,7 +53,7 @@ scroll-behavior: smooth;
 	font-size:16px;
 }
 header{
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../pic/bgimghome.png);
+background-image:rgba(255,255,255,1), url(../pic/bgimghome.png);
 height:600px;
 background-size: cover;
 background-position:center;
@@ -103,11 +103,12 @@ font-size:4vw;
 }
 
 /*------------------------------------------------*/
+
 .error{
 width:100%;
 padding:5px;
 border:2px solid #e60000;
-color:;
+color: red;
 background:#ff3333;
 border-radius:4px;
 text-align:center;
