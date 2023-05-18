@@ -1,10 +1,99 @@
 *{
 margin:0;
 padding:0;
-font-family:SF Pro Text;
+font-family: SF Pro Text, sans-serif;
 scroll-behavior: smooth;
 }
-
+@font-face {
+	font-family: "SF Pro Text";
+	font-style: normal;
+	font-weight: 300;
+	src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-Light.ttf");
+  }
+  @font-face {
+	font-family: "SF Pro Text";
+	font-style: normal;
+	font-weight: 400;
+	src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-Regular.ttf");
+  }
+  @font-face {
+	font-family: "SF Pro Text";
+	font-style: normal;
+	font-weight: 500;
+	src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-Medium.ttf");
+  }
+  @font-face {
+	font-family: "SF Pro Text";
+	font-style: normal;
+	font-weight: 600;
+	src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-SemiBold.ttf");
+  }
+  @font-face {
+	font-family: "SF Pro Text";
+	font-style: normal;
+	font-weight: 700;
+	src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-Bold.ttf");
+  }
+  @font-face {
+	font-family: "SF Pro Text";
+	font-style: normal;
+	font-weight: 900;
+	src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-Heavy.ttf");
+  }
+  @font-face {
+	font-family: "SF Pro Display";
+	font-style: normal;
+	font-weight: 100;
+	src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Ultralight.ttf");
+  }
+  @font-face {
+	font-family: "SF Pro Display";
+	font-style: normal;
+	font-weight: 200;
+	src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Thin.ttf");
+  }
+  @font-face {
+	font-family: "SF Pro Display";
+	font-style: normal;
+	font-weight: 300;
+	src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Light.ttf");
+  }
+  @font-face {
+	font-family: "SF Pro Display";
+	font-style: normal;
+	font-weight: 400;
+	src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Regular.ttf");
+  }
+  @font-face {
+	font-family: "SF Pro Display";
+	font-style: normal;
+	font-weight: 500;
+	src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Medium.ttf");
+  }
+  @font-face {
+	font-family: "SF Pro Display";
+	font-style: normal;
+	font-weight: 600;
+	src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-SemiBold.ttf");
+  }
+  @font-face {
+	font-family: "SF Pro Display";
+	font-style: normal;
+	font-weight: 700;
+	src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Bold.ttf");
+  }
+  @font-face {
+	font-family: "SF Pro Display";
+	font-style: normal;
+	font-weight: 800;
+	src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Black.ttf");
+  }
+  @font-face {
+	font-family: "SF Pro Display";
+	font-style: normal;
+	font-weight: 900;
+	src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-Heavy.ttf");
+  }
 /*---- NAVIGATION BAR---*/
 
 #nav-bar{
@@ -25,7 +114,7 @@ scroll-behavior: smooth;
 .navbar-nav li a{
 	float:right;
 	text-align:left;
-	padding:4px 16px!important;
+	padding:24px 16px!important;
 	color:#333!important;
 	text-decoration:none;
     border:1px solid transparent;
@@ -81,7 +170,7 @@ font-size:4vw;
 .container{
 	width:100%;
 	margin-top:5%;
-	font-family:SF Pro Text;
+	font-family:"SF Pro Text";
 	
 }
 .container h2{
