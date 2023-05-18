@@ -32,7 +32,7 @@ session_start();?>
         <ul class="navbar-nav ml-auto">
       
 	   <li class="nav-item active">
-        <a class="nav-link" href="index.html">BOOKS</a>
+        <a class="nav-link" href="index.html">Explore</a>
       </li>
 	<li class="nav-item">
         <a class="nav-link" href="cart.php"><i class="fa fa-shopping-cart"></i>&nbsp;CART</a>
