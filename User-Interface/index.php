@@ -34,16 +34,16 @@ session_start();?>
 	   <li class="nav-item active">
         <a class="nav-link" href="index.html">Explore</a>
       </li>
-	<li class="nav-item">
-        <a class="nav-link" href="cart.php"><i class="fa fa-shopping-cart"></i>&nbsp;CART</a>
+	   <li class="nav-item">
+        <a class="nav-link" href="AboutUs.html">About us</a>
       </li>
 	   <li class="nav-item">
-        <a class="nav-link" href="AboutUs.html">ABOUT US</a>
-      </li>
-	   <li class="nav-item">
-        <a class="nav-link" href="Contact.html">CONTACT</a>
+        <a class="nav-link" href="Contact.html">Contact</a>
       </li>
       
+	<li class="nav-item">
+        <a class="nav-link" href="cart.php"><i class="fa fa-shopping-cart"></i>&nbsp;Cart</a>
+      </li>
  <li class="nav-item ">
         <a class="nav-link" href="profile.php"><i class="fa fa-user"></i>&nbsp;Profile</a>
       </li>
@@ -53,7 +53,7 @@ session_start();?>
 .
 </section>
 
-<div class="col-md-12">
+<div class="col-md-10">
 <div class="title">
 <h1>BOOK STORE </h1><br><p>No of books Published &nbsp;
 <span class="counter text-center">250</span>&nbsp;+</p>
