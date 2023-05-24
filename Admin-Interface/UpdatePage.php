@@ -98,7 +98,7 @@
   </div>
    <div class="form-group">
     <label >Description</label>
-    <textarea class="form-control"  rows="3"  name="description" required /><?php echo $row['description'] ?></textarea>
+    <textarea class="form-control"  rows="3"  name="description" required /><?php echo $row['synopsis'] ?></textarea>
   </div>
 <div class="form-group col-md-4">
       <label >Display</label>

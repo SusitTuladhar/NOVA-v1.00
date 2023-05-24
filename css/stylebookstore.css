@@ -1,8 +1,9 @@
   *{
 	margin:0;
 	padding:0;
-	font-family: "SF Pro Text", sans-serif;
+	font-family: "SF-Pro-Text", sans-serif;
 	scroll-behavior: smooth;
+	box-sizing: border-box;
 	}
 /*---- NAVIGATION BAR---*/
 
@@ -10,7 +11,7 @@
 	position:sticky;
 	top:0;
 	z-index:10;
-	left: calc(50% - 1920px/2) !important;
+
 }
 .navbar-brand img{
 	float:left;
@@ -26,11 +27,11 @@
 	float:right;
 	text-align:left;
 	padding:24px 16px!important;
-	color:#333!important;
+	color:#292929!important;
 	text-decoration:none;
-    border:1px solid transparent;
-    border-radius:6%;
-    transition:0.6s ease;
+	border:1px solid transparent;
+	border-radius:6%;
+	transition:0.6s ease;
 }
 #nav-bar ul li a:hover{
     
@@ -52,13 +53,7 @@
 	font-weight:600;
 	font-size:16px;
 }
-header{
-background-image:url(../pic/bgimghome.png);
-height:600px;
-background-size: cover;
-background-position:center;
-opacity: 60%;
-}
+header{background-image:url(../pic/bgimghome.png);height:600px;background-size: cover;background-position:center;opacity: 60%;}
 
 .title{
 position:absolute;
@@ -80,9 +75,7 @@ font-size:4vw;
 
 .container{
 	width:100%;
-	margin-top:5%;
-	font-family:"SF Pro Text";
-	
+	font-family:"SF-Pro-Text";
 }
 .container h2{
 	background:#ff7600;
@@ -133,17 +126,21 @@ height:600px;
 /*Menu*/
 
 .main-container{
-	margin:1% 8%;
+	margin:1% 2%;
 	padding:1%;
 	display:flex;
 	flex-wrap:wrap;
+	justify-content: center;
 }
 .main-container >div{
-	margin:2% 2%;
-	padding:2%;
-	border:1px solid silver;
- 	width:29%;
+	/* margin:2% 2%; */
+	/* padding:2%; */
+	/* border:1px solid silver; */
+ 	width:227px;
+	height:403px;
+	margin:1rem;
 }
+
 
 .line-flex{
 	display:flex;
