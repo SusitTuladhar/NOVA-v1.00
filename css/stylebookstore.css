@@ -33,8 +33,8 @@
 	transition:0.6s ease;
 }
 #nav-bar ul li a:hover{
-    
-	background-color:#e9eef7dd;
+	backdrop-filter: blur(2px);
+	background-color:#ebf0f9b4;
     color:#000!important;
 }
 #nav-bar ul li.active a{
@@ -74,7 +74,8 @@ font-size:4vw;
 
 .container{
 	width:100%;
-	font-family:"SF-Pro-Text";
+	font-family:"SF Pro Text";
+	max-width: 1276px;
 }
 .container h2{
 	background:#ff7600;
@@ -110,8 +111,8 @@ text-align:center;
 .book {
 	height:271px;
 	width:196px;
-	margin-bottom: 1.5rem;
-	box-shadow: 0px 24.1221px 48.2443px -9.64886px rgba(0, 0, 0, 0.16), 0px 14.4733px 19.2977px -9.64886px rgba(0, 0, 0, 0.24);
+	margin-bottom: 1rem;
+	box-shadow: 0px 24.1221px 48.2443px -9.64886px rgba(95, 99, 131, 0.14), 0px 14.4733px 19.2977px -9.64886px rgba(0, 0, 0, 0.24);
 	
 	transition: all .3s ease-in-out;
 	transform-origin: left center 0px;
@@ -127,7 +128,7 @@ text-align:center;
     display: block;
     width: 20px;
     height: 100px;
-    opacity: 1;
+    opacity: 0;
     position: absolute;
     top: -12px;
     right: 8px;
@@ -139,7 +140,7 @@ text-align:center;
 .book::after {
     content: " ";
     display: block;
-    opacity: 0;
+    opacity: 1;
     width: 180px;
     height: 255px;
     position: relative;

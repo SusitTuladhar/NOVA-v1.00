@@ -33,8 +33,8 @@ session_start(); ?>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
 
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Explore</a>
+            <li class="nav-item">
+              <a class="nav-link" href="Explore.html">Explore</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="AboutUs.html">About us</a>
