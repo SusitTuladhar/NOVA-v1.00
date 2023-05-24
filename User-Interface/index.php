@@ -116,12 +116,11 @@ session_start(); ?>
     while ($row = $stmt->fetch()) {
       ?>
       <div class="book-container">
-        <img src="../pic/book/<?php echo $row['image'] ?>" style= "height:271px; width:196px;box-shadow: 0px 24.1221px 48.2443px -9.64886px rgba(0, 0, 0, 0.16), 0px 14.4733px 19.2977px -9.64886px rgba(0, 0, 0, 0.24) !important;" />
-        <h5 style="padding-top: 32px; font-weight: medium;">
+        <img src="../pic/book/<?php echo $row['image'] ?>" class= "book">
           <b>
             <?php echo $row['title'] . " " ?>
-          </b></h3>
-          <p>
+          </b>
+          <p style="color:#4C4C66;margin-top:0.25rem;">
             <?php echo $row['author'] . " " ?>
           </p>
       </div>
