@@ -24,8 +24,8 @@ session_start(); ?>
   <header>
     <section id="nav-bar">
 
-      <nav class="navbar navbar-expand-lg navbar-light container mx-auto">
-        <a class="navbar-brand" href="#"><img src="../pic/logo1.png"></a>
+      <nav class="navbar navbar-expand-lg navbar-light container">
+        <a class="navbar-brand" href="#"><img src="../pic/logo1.svg"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -115,19 +115,14 @@ session_start(); ?>
     $stmt = $db->query("SELECT * FROM product");
     while ($row = $stmt->fetch()) {
       ?>
-      <div class="">
-        <img src="../pic/book/<?php echo $row['image'] ?>" style="height:315px; width:227px;">
-        <h5 style="padding-top:10px;"><b>
+      <div class="book-container">
+        <img src="../pic/book/<?php echo $row['image'] ?>" style= "height:271px; width:196px;box-shadow: 0px 24.1221px 48.2443px -9.64886px rgba(0, 0, 0, 0.16), 0px 14.4733px 19.2977px -9.64886px rgba(0, 0, 0, 0.24) !important;" />
+        <h5 style="padding-top: 32px; font-weight: medium;">
+          <b>
             <?php echo $row['title'] . " " ?>
           </b></h3>
           <p>
-            <?= substr($row['synopsis'], 0, 70); ?>
-            <?php
-            $tags = explode(",", $row['tags']);
-            foreach ($tags as $tag) {
-              echo '<button class="tag-button">' . trim($tag) . '</button>';
-            }
-            ?>
+            <?php echo $row['author'] . " " ?>
           </p>
       </div>
 
@@ -178,7 +173,6 @@ session_start(); ?>
 
   <!------------------------------------>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</body>
 </body>
 
 </html>
