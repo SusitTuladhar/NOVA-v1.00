@@ -52,24 +52,18 @@ session_start(); ?>
           </ul>
         </div>
       </nav>
-      .
     </section>
 
-    <div class="col-md-10">
-      <div class="title">
-        <h1>BOOK STORE </h1><br>
-        <p>No of books Published &nbsp;
-          <span class="counter text-center">250</span>&nbsp;+
-        </p>
-
-
-
-      </div>
+    <div class="title">
+      <h2>Welcome to, Nova</h2><br>
+      <p>“Discover a world of knowledge at your fingertips with <br> our curated collection of books.”
+      </p>
     </div>
+
   </header>
   <!----------------------Menu title--------------->
   <div class="container" id="msg-Content">
-    <h2 class="t1">New Arrivals</h2>
+    <h2 class="t1">Featured</h2>
 
     <!--Menu items-->
 
@@ -116,13 +110,13 @@ session_start(); ?>
     while ($row = $stmt->fetch()) {
       ?>
       <div class="book-container">
-        <img src="../pic/book/<?php echo $row['image'] ?>" class= "book">
-          <b>
-            <?php echo $row['title'] . " " ?>
-          </b>
-          <p style="color:#4C4C66;margin-top:0.25rem;">
-            <?php echo $row['author'] . " " ?>
-          </p>
+        <img src="../pic/book/<?php echo $row['image'] ?>" class="book">
+        <b>
+          <?php echo $row['title'] . " " ?>
+        </b>
+        <p style="color:#4C4C66;margin-top:0.25rem;">
+          <?php echo $row['author'] . " " ?>
+        </p>
       </div>
 
     <?php } ?>
