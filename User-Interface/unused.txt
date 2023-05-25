@@ -1,0 +1,14 @@
+// 
+  <br>
+            <?php
+            $tags = explode(",", $row['tags']);
+            foreach ($tags as $tag) {
+              echo '<button class="tag-button">' . trim($tag) . '</button>';
+            }
+            ?>
+
+//
+
+//cdn
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+//

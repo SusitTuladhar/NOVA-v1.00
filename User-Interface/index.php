@@ -24,8 +24,8 @@ session_start(); ?>
   <header>
     <section id="nav-bar">
 
-      <nav class="navbar navbar-expand-lg navbar-light container mx-auto">
-        <a class="navbar-brand" href="#"><img src="../pic/logo1.png"></a>
+      <nav class="navbar navbar-expand-lg navbar-light container">
+        <a class="navbar-brand" href="#"><img src="../pic/logo1.svg"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -33,8 +33,8 @@ session_start(); ?>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
 
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Explore</a>
+            <li class="nav-item">
+              <a class="nav-link" href="Explore.html">Explore</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="AboutUs.html">About us</a>
@@ -115,19 +115,13 @@ session_start(); ?>
     $stmt = $db->query("SELECT * FROM product");
     while ($row = $stmt->fetch()) {
       ?>
-      <div class="">
-        <img src="../pic/book/<?php echo $row['image'] ?>" style="height:315px; width:227px;">
-        <h5 style="padding-top:10px;"><b>
+      <div class="book-container">
+        <img src="../pic/book/<?php echo $row['image'] ?>" class= "book">
+          <b>
             <?php echo $row['title'] . " " ?>
-          </b></h3>
-          <p>
-            <?= substr($row['synopsis'], 0, 70); ?>
-            <?php
-            $tags = explode(",", $row['tags']);
-            foreach ($tags as $tag) {
-              echo '<button class="tag-button">' . trim($tag) . '</button>';
-            }
-            ?>
+          </b>
+          <p style="color:#4C4C66;margin-top:0.25rem;">
+            <?php echo $row['author'] . " " ?>
           </p>
       </div>
 
@@ -178,7 +172,6 @@ session_start(); ?>
 
   <!------------------------------------>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</body>
 </body>
 
 </html>

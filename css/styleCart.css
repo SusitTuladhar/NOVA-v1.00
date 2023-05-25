@@ -2,9 +2,9 @@
 
 
 #nav-bar{
-	//position:sticky;
+	position:sticky;
 	background:orange;
-	//height:80px;
+	height:80px;
 	top:0;
 	z-index:10;
 }
