@@ -34,7 +34,7 @@ session_start(); ?>
           <ul class="navbar-nav ml-auto">
 
             <li class="nav-item">
-              <a class="nav-link" href="Explore.html">Explore</a>
+              <a class="nav-link" href="explore.php">Explore</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="AboutUs.html">About us</a>
